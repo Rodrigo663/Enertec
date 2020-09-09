@@ -1,0 +1,14 @@
+extends base
+block content
+    main
+      section.section-reviews
+        h3.heading-tertiary.u-margin-bottom-medium.u-center-text Leia nossas avaliações!
+        .reviews
+          each user in users
+            .reviews__card.u-box-column
+              .u-box-row.reviews__row
+                img.reviews__avatar(src=`/img/users/${user.photo}` alt="user-photo")
+                h1.sub-title--gray.sub-title--bolder.sub-title=user.nome
+              .reviews__trick
+                p.default-text.reviews__text=user.descrição
+

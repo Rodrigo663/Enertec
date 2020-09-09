@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Procuramos trazer um futuro melhor para a nossa sociedade. Instalamos paineis solares e podemos automatizar a sua residência!"
+    />
+    <title>Enertech | Solar</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public\css\style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="https://metsolar.eu/wp-content/uploads/2019/04/shadow_standarts_.png"
+    />
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <a class='u-none x-button'>
+      <svg> 
+        
+          <use xlink:href='public/icons/symbol-defs.svg#icon-x'></use>
+          
+        </svg>
+  </a>
+
+
+    <div class="blur-div u-none">
+
+    </div>
+
+
+
+    <div  class='right-navbar u-none'>
+      <a href="http://127.0.0.1:8080/" class="right-navbar__link">Inicio</a>
+      <a href="#" class="right-navbar__link">Painéis Solares</a>
+      <a href="#" class="right-navbar__link">Automação</a>
+    </div>
+    <header class="solar-header">
+      <navbar class="navbar">
+        <img class="navbar__logo" src="public/img/logo.png" alt="logo" />
+        <a href="http://127.0.0.1:8080/" class="navbar__link">Inicio</a>
+        <a href="#" class="navbar__link">Paines Solares</a>
+        <a href="#" class="navbar__link">Automação</a>
+
+        <button class='toggle-button'>
+          <svg id='icon-1' class='toggle-icon'>
+              <use xlink:href="public/icons/symbol-defs.svg#icon-lines"></use>
+          </svg>
+          <svg id='icon-2' class='toggle-icon u-none'>
+              <use xlink:href="public/icons/symbol-defs.svg#icon-x"></use>
+          </svg>
+
+
+      </button>
+      
+      </navbar>
+
+      <div id='defheader-solar' class="defheader">
+        <h1 id='solar-main-title' class="defheader__title">Energia Solar Nunca é Demais</h1>
+        <div class="defheader__whole">
+          <p id='solar-quote' class="defheader__quote">
+            Um investimento que lhe trará resultados duradouros, sem causar
+            danos ao meio-ambiente
+          </p>
+          <div class="defheader__grid " id='solar-cards-grid'>
+            <div id='solar-grid-card' class="defheader__card defheader__card--numberOne">
+              <img
+                class="defheader__icon"
+                src="public/icons/sun-solar.svg"
+                alt="icon"
+              />
+              <p class="defheader__paragraph">Converta luz solar em energia</p>
+            </div>
+
+            <div id='solar-grid-card' class="defheader__card defheader__card--different-one">
+              <h1 class="defheader__sub-title">Kw</h1>
+              <p class="defheader__paragraph">Produza mais de 30kw diários</p>
+            </div>
+            <div id='solar-grid-card' class="defheader__card defheader__card--numberTwo">
+              <h1 class="defheader__sub-title">24/7</h1>
+              <p class="defheader__paragraph">Monitoramento de energia</p>
+            </div>
+
+            <a href="" class="btn__animated btn--white btn--border"
+              >Peça Agora</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-benefits-solar">
+        <p class="legend">Dinheiro Salvo</p>
+        <p class="legend-2">Conta de Luz</p>
+        <video class="little-video" autoplay muted loop>
+          <source src="./public/videos/final.mp4" type="video/mp4" />
+          <source src="./public/videos/final.webm" type="video/webm" />
+          Your browser is not supported!
+        </video>
+
+        <div class="content-box">
+          <p id='economize-button' class="sub-title">Economize</p>
+          <h1
+            class="heading-tertiary"
+            style="
+              text-transform: none;
+              font-size: 3.2rem;
+              padding-bottom: 1rem;
+            "
+          >
+            Eletrecidade por menos
+          </h1>
+          <p class="default-text default-text--solar-benefits">
+            Use a energia solar para abastecer sua casa e reduzir sua
+            dependência da rede. Aproveite a enrgia solar para ajudar o
+            meio-ambiente e assuma o controle de sua conta mensal de
+            eletricidade. Saiba mais sobre seu potencial de economia em nosso
+            Design Studio.
+          </p>
+          <a
+            href="#design"
+            style="padding: 1rem 2rem;"
+            class="btn__animated btn--border btn--black"
+            >Veja as suas economias</a
+          >
+        </div>
+      </section>
+      <section class="section-carousel">
+
+        <div style="opacity: 0.4;" class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="./public/videos/long.mp4" type="video/mp4" />
+            <source src="./public/videos/long.webm" type="video/webm" />
+            Your browser is not supported!
+          </video>
+        </div>
+        <button id='more' href="" class="btn--white u-center-absolute-downer carousel__button">Ver Imagens</button>
+
+        <h1 id='customers' class="heading-tertiary u-margin-bottom-medium u-center-text">
+          Veja clientes satisfeitos
+        </h1>
+        <div
+          id="testemonial-carousel"
+          data-interval="5000"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+        
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img
+                class="image"
+                src="public/img/slides/guaraciaba.jpg"
+                alt="guaraciaba"
+              />
+            </div>
+            <div class="carousel-item"">
+              <img
+                class="image"
+                src="public/img/slides/caibi.jpg"
+                alt="caibi"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+
+                class="image"
+                src="public/img/slides/itapiranga.jpg"
+                alt="itapiranga"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#testemonial-carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#testemonial-carousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section-app" id="my-one">
+        <h1 class="u-center-text heading-tertiary">
+          Acompanhe a sua produção diária
+        </h1>
+
+        <p class="u-center-text sub-title">
+          Tenha dados estatísticos de sua produção energia direto no seu celular 📈
+        </p>
+        <div class="my-flex">
+          <img
+            src="public/img/phone-app.png"
+            alt="phone"
+            class="my-flex__rotate"
+          />
+          <div class="items-box">
+            <h4 class="u-center-text big-heading">Confira um dos apps  <span>   👇🏻</span> </h4>
+            <div class="buttons-box">
+              <button
+                onclick="window.open('https://apps.apple.com/br/app/refulog/id1128745192', '_blank')"
+                type="button"
+                class="btn btn-dark btn-lg"
+              >
+                Download <i class="fab fa-apple"></i>
+              </button>
+              <button
+                onclick="window.open('https://play.google.com/store/apps/details?id=com.refuelektronik.refulog', '_blank')"
+
+                type="button"
+                class="btn btn-light btn-lg
+                "
+              >
+                Download <i class="fab fa-google-play"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section-design-studio" id="design">
+        <div class="form-box">
+          <h1 class="u-center-text big-heading">Design Studio</h1>
+          <h4
+            class="u-center-text u-margin-bottom-big heading-tertiary"
+            style="font-size: 1.8rem; text-transform: none;"
+          >
+            Veja as suas economias
+          </h4>
+
+          <form id="the-form" action="">
+            <span class="input-symbol-euro">
+              <input
+                required
+                class="u-margin-bottom-big input"
+                max="100000"
+                min="25"
+                id='valor-da-luz'
+                placeholder="conta de luz mensal média"
+                type="number"
+                name="currency"
+              />
+            </span>
+            <button
+              id="btn-form"
+              style="padding: 0.7rem 4rem;"
+              class="u-center-block btn__animated btn--border btn--black"
+            >
+              Veja as suas economias
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="items">
+        <div class="items__1">
+          <a href="" class="items__link">About</a>
+          <a href="" class="items__link">Contact</a>
+          <a href="" class="items__link">Careers</a>
+          <a href="" class="items__link">Avaliações</a>
+        </div>
+        <div class="items__2">
+          <img src="public/img/logo.png" alt="icon" class="items__img" />
+        </div>
+      </div>
+
+      <p class="items__copy">
+        &copy; Enertec 2020. Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js"
+    crossorigin
+  ></script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    crossorigin
+  ></script>
+  <script type="text/Javascript" src="script.js"></script>
+</html>

@@ -1,0 +1,39 @@
+extends base
+block content
+    main
+      section.section-about-us
+        h1#meet-us.heading-secondary.u-center-text.u-margin-bottom-big Conheça a nossa empresa
+        .big-content-box
+          .values
+            h1.heading-green.u-margin-bottom-medium Nossos Valores
+            .values__detail.u-margin-bottom-small
+              svg.gradient-icon
+                use(xlink:href="/icons/symbol-defs.svg#icon-clock")
+              p.heading-tertiary.u-def-font-size(style="color: #666;")
+                | Pontualidade
+            .values__detail.u-margin-bottom-small
+              svg.gradient-icon
+                use(xlink:href="/icons/symbol-defs.svg#icon-trending-up")
+              p.heading-tertiary.u-def-font-size(style="color: #666;")
+                | Perseverança
+            .values__detail.u-margin-bottom-small
+              svg.gradient-icon
+                use(xlink:href="/icons/symbol-defs.svg#icon-handshake-o")
+              p.heading-tertiary.u-def-font-size(style="color: #666;")
+                | Confiança
+            .values__detail
+              svg.gradient-icon
+                use(xlink:href="/icons/symbol-defs.svg#icon-star")
+              p.heading-tertiary.u-def-font-size(style="color: #666;")
+                | Qualidade
+          .history
+            h1.heading-green.u-margin-bottom-small Sobre a Enertec
+            p.default-text(style="font-size: 1.7rem; color: rgb(145, 142, 142);")
+              | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      section.section-pictures
+        .picture-box
+          img.picture-box__img.picture-box__img--1(src="/img/washington.jpg" alt="The Park Camper Tour 1")
+        .picture-box
+          img.picture-box__img.picture-box__img--2(src="/img/header-img.jpg" alt="The Park Camper Tour 1")
+        .picture-box
+          img.picture-box__img.picture-box__img--3(src="/img/automation-header.jpg" alt="The Park Camper Tour 1")

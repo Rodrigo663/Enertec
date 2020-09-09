@@ -1,0 +1,33 @@
+extends base
+block append head
+  <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+
+
+
+block content 
+     main
+      section.section-form
+        form.big-form(action="")
+          h1.u-center-block.heading-tertiary.u-margin-bottom-medium
+            | Faça o seu pedido!
+          input.u-margin-bottom-big.form-control.big-form__input.big-form__name(required="" maxlength="46" minlength="3" placeholder="Nome" type="text")
+          input.u-margin-bottom-big.form-control.big-form__input.big-form__last-name(required="" maxlength="50" minlength="3" placeholder="Sobrenome" type="text")
+          input#exampleInputEmail1.form-control.big-form__input.big-form__email(required="" type="email" aria-describedby="emailHelp" placeholder="Email")
+          // pattern='^(?:0|\(?\+4[0-9]\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$'
+          <input  required pattern='^(?:0|\(?\+4[0-9]\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$' class="u-margin-bottom-big form-control big-form__input big-form__cellphone" placeholder="Número de Celular" type="tel" onblur="if (this.value == '') {this.value = '(+49) 9';}" onfocus="if (this.value == '') {this.value = '(+49) 9';}"/>          
+          p.u-margin-bottom-big.sub-title.sub-title--bolder Em qual serviço você está interessado?
+
+          
+          .u-margin-bottom-big.form-check.big-form__radio-box
+            input#exampleRadios1.form-check-input.big-form__radio(type="radio" name="exampleRadios" value="option1" checked="")
+            label.form-check-label.sub-title(for="exampleRadios1")
+              | Painéis Solares
+          .u-margin-bottom-big.form-check.big-form__radio-box
+            input#exampleRadios2.form-check-input.big-form__radio(type="radio" name="exampleRadios" value="option2")
+            label.form-check-label.sub-title(for="exampleRadios2")
+              | Automação
+          .u-margin-bottom-big.form-check.big-form__radio-box
+            input#exampleRadios2.form-check-input.big-form__radio(type="radio" name="exampleRadios" value="option2")
+            label.form-check-label.sub-title(for="exampleRadios2")
+              | Ambos
+          button.btn--green Enviar

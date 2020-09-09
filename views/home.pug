@@ -1,0 +1,93 @@
+extends base
+block content
+
+    main
+      section.section-benefits
+        .benefit-box
+          .benefit
+            svg.benefit__icon
+              use(xlink:href="/icons/symbol-defs.svg#icon-globe")
+            h4.benefit__header Ajude o Planeta
+            p.benefit__text.default-text
+              | O aquecimento global está ameaçando a Terra. É nossa missão como humanidade procurar fontes renováveis e sustentáveis de energia.
+          .benefit
+            svg.benefit__icon
+              use(xlink:href="/icons/symbol-defs.svg#icon-credit")
+            h4.benefit__header Economize Dinheiro
+            p.benefit__text.default-text
+              | Economize até 90% em sua conta de luz. Um investimento duradouro que traz ótimos resultados a longo prazo. O seu bolso agradeçe!
+          .benefit
+            svg.benefit__icon
+              use(xlink:href="/icons/symbol-defs.svg#icon-office")
+            h4.benefit__header Venda energia!
+            p.benefit__text.default-text
+              | Consumindo pouca energia, você tem a possibilidade de vender a energia produzida para pessoas que procuram ajudar o meio-ambiente.
+          .benefit
+            svg.benefit__icon
+              use(xlink:href="/icons/symbol-defs.svg#icon-sun")
+            h4.benefit__header Sol é vida!
+            p.benefit__text.default-text
+              | Nossa estrela sol é arma mais poderosa para salvarmos a biosfera! Temos que aproveitar ao máximo tudo o que ela tem a nos oferecer.
+      section.section-stories
+        .bg-video
+          video.bg-video__content(autoplay="" muted="" loop="")
+            source(src="/videos/video-1.mp4" type="video/mp4")
+            source(src="/videos/video-1.webm" type="video/webm")
+            |                     Your browser is not supported!
+        .u-center-text.u-margin-bottom-big
+          h2.heading-secondary
+            | Nós fazemos as pessoas genuinamente felizes!
+        each user in users
+          .row
+            .story
+              figure.story__shape
+                img.story__img(src=`/img/users/${user.photo}` alt="Person")
+
+                figcaption.story__caption=user.nome
+              .story__text
+                h3.heading-tertiary--lighter.u-margin-bottom-small=user.título
+                p=user.descrição
+
+                
+        .u-center-text.u-margin-top-huge
+          a.btn__default(href="/avaliacoes") Leia todas as avaliações →
+      section.section-products
+        .u-center-text.u-margin-bottom-medium
+          h2.heading-secondary
+            | Nossos serviços
+        #services.services
+          .services__card
+            img.services__icon(src="/icons/tools.png" alt="tools")
+            h1.services__header 🔧 Instalação Completa
+            p.services__paragraph Fizemos uma instalação completa, do ínicio ao fim com profissionais capacitados.
+          .services__card
+            img.services__icon(src="/icons/project.svg" alt="projeto")
+            h1.services__header 💼 Projeto Executivo
+            p.services__paragraph
+              | O projeto é feito por profissionais competentes e detalhistas, que atendem você de acordo com suas necessidades.
+          .services__card
+            img.services__icon(src="/icons/phone.png" alt="celular")
+            h1.services__header 💻 Monitoramento
+            p.services__paragraph
+              | Agora você pode acompanhar a produção de energia de sua residência direto do seu celular! Nunca foi tão fácil!
+          .services__card
+            img.services__icon(src="/icons/drone.png" alt="drone")
+            h1.services__header 📷 Imagens Áreas
+            p.services__paragraph
+              | Graças aos nossos drones, consiguimos tirar fotografias incríveis do seu lar. Você irá se surpreender com as imagens!
+          .services__card
+            img.services__icon(src="/icons/IOT.png" alt="nuvem")
+            h1.services__header 📴 Automação Residencial
+            p.services__paragraph
+              | Agora você pode ter controle de sua casa direto do seu celular. A internert das coisas pode e deve facilitar a sua vida!
+          .services__card
+            img.services__icon(src="/icons/medal.png" alt="medalha")
+            h1.services__header 🏅 Garantia
+            p.services__paragraph
+              | Caso houver um probelma na instalação, imediatamente nossos profissionais podem lhe auxilia-lo. Prestamos serviços pós-venda também.
+      section.section-order
+        .bigBox
+          .bigBox__content
+            h2.heading-secondary.heading-secondary--lighter.heading-secondary--static O que você está esperando?
+            h4.heading-tertiary Não se acanhe, peça já!
+            a.btn__animated.btn__animated--blue(href="/pedido") Peça Agora

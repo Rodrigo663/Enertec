@@ -1,0 +1,58 @@
+header(class=className ? 'solar-header' : classHeader ? 'header' : classAuto ?  'auto-header' : '')
+    navbar(class=navBlack ? navBlack : 'navbar')
+
+        img.navbar__logo(src="/img/logo.png" alt="logo")
+        a.navbar__link(href="/") Inicio
+        a.navbar__link(href="/solar") Paines Solares
+        a.navbar__link(href="/auto") Automação
+        
+        button.toggle-button
+            svg#icon-1.toggle-icon
+                use(xlink:href="/icons/symbol-defs.svg#icon-lines")
+            svg#icon-2.toggle-icon.u-none
+                use(xlink:href="/icons/symbol-defs.svg#icon-x")
+    if home
+        .institutional
+            h1.institutional__title Energia
+            p.institutional__paragraph Sustentável e Efieciente
+            .btn
+                a.btn__animated.btn__main(href="#services") Explore nossos serviços
+    if solar 
+        #defheader-solar.defheader
+            h1#solar-main-title.defheader__title Energia Solar Nunca é Demais
+            .defheader__whole
+                p(id='solar-quote' class='defheader__quote') Um investimento que lhe trará resultados duradouros, sem causar danos ao meio-ambiente
+                #solar-cards-grid.defheader__grid
+                    #solar-grid-card.defheader__card.defheader__card--numberOne
+                        img.defheader__icon(src="/icons/sun-solar.svg" alt="icon")
+                        p.defheader__paragraph Converta luz solar em energia
+                    #solar-grid-card.defheader__card.defheader__card--different-one
+                        h1.defheader__sub-title Kw
+                        p.defheader__paragraph Produza mais de 30kw diários
+                    #solar-grid-card.defheader__card.defheader__card--numberTwo
+                        h1.defheader__sub-title 24/7
+                        p.defheader__paragraph Monitoramento de energia
+                    a.btn__animated.btn--white.btn--border(href="pedido") Peça Agora
+    if auto
+        .defheader.defheader--auto
+            h1.defheader__title.defheader__title--auto.u-center-text A Nova Residência do Século XXI
+            #new-whole.defheader__whole
+                p.defheader__quote  Tenha controle de sua residencia no seu celular, e automatize tarefas repetitivas
+    
+               
+                .defheader__grid
+                    #card-1.defheader__card.defheader__card--numberOne.defheader__auto-card
+                        svg.defheader__icon--little
+                            use(xlink:href="/icons/symbol-defs.svg#icon-light-bulb")
+                        p.defheader__paragraph Controle a iluminação residencial
+
+                    #card-2.defheader__card.defheader__card--different-one.defheader__auto-card
+                        img.defheader__icon(src="/icons/pool.png" alt="my-icon")
+                        p.defheader__paragraph Controle o aquecimento de piscinas
+
+                    #card-3.defheader__card.defheader__card--numberTwo.defheader__auto-card
+                        svg.defheader__icon--little
+                            use(xlink:href="/icons/symbol-defs.svg#icon-mobile")
+                        p.defheader__paragraph Controle outros aparelhos
+                    a.btn__animated.btn--white.btn--border(href="pedido") Peça Agora
+
