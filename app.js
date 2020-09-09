@@ -6,7 +6,7 @@ const userRouter = require('./routes/userRoutes');
 const slidesRouter = require('./routes/slidesRoutes');
 const AppError = require('./utils/appError');
 const errorThrower  = require('./controllers/errorController')
-
+const hpp = require('hpp');
 const app = express();
 app.use(express.static(path.join(__dirname,  'public')));
 app.use(express.json({ limit: '10kb' }));
@@ -14,7 +14,13 @@ app.use(express.json({ limit: '10kb' }));
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
-
+// Prevent Parameter Pollution
+app.use(hpp({
+  whitelist: [
+    'nome',
+    'interesse'
+  ]
+}));
 
 
 app.use('/', viewRouter);
