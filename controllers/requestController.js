@@ -1,7 +1,7 @@
 const Request = require('../models/requestModel');
 const appError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
-const Email = require('../utils/email');
+
 const APIFeatures = require('../utils/apiFeatures');
 const Factory = require('./factory');
 
