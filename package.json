@@ -39,12 +39,15 @@
     "dotenv": "^8.2.0",
     "email-validator": "^2.0.4",
     "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
     "helmet": "^4.1.0",
+    "hpp": "^0.2.3",
     "html-to-text": "^5.1.1",
     "jquery": "^3.5.1",
     "mongoose": "^5.10.2",
     "nodemailer": "^6.4.11",
     "parcel-bundler": "^1.12.4",
-    "pug": "^3.0.0"
+    "pug": "^3.0.0",
+    "xss-clean": "^0.1.1"
   }
 }
