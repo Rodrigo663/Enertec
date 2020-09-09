@@ -8,6 +8,9 @@ const AppError = require('./utils/appError');
 const errorThrower = require('./controllers/errorController');
 const hpp = require('hpp');
 const mongoSanitize = require('express-mongo-sanitize');
+const compression = require('compression');
+
+
 const xss = require('xss-clean');
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
@@ -25,6 +28,7 @@ app.use(
     whitelist: ['nome', 'interesse'],
   })
 );
+app.use(compression());
 
 app.use('/', viewRouter);
 app.use('/api/v1/requests', requestRouter);
