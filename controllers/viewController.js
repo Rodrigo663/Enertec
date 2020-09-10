@@ -37,7 +37,6 @@ exports.getSolar = catchAsync(async(req, res) => {
     });
 
     const slides = d.data.data.data;
-    
 
     res.status(200).render('solar', {
         title: 'Solar',

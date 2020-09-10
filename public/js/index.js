@@ -6,22 +6,21 @@ import { sendData } from './send.js';
 
 const more = $('#more');
 const body = $('body');
-
 if(more.length) {
-  const carousel = $('.carousel');
+  const carousel = $('.big-carousel-box ');
   const div = $('.blur-div');
  
   const cut  =$('#customers');
   const button = $('.x-button');
   const c = $('.section-carousel');
   function toggle() {
+    more.toggleClass('u-none');
     c.toggleClass('u-static');
     cut.toggleClass('u-none');
 
     div.toggleClass('u-none');
-    carousel.toggleClass('carousel-bigger');
-    button.toggleClass('u-none');
-  
+    carousel.toggleClass('u-none');
+    
 
   }
   button.on('click', () => {

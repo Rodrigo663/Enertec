@@ -1,44 +1,59 @@
 extends base
 
 block content
+    .big-carousel-box.u-none
+        svg.x-button
+          use(xlink:href="/icons/symbol-defs.svg#icon-x")
+        #carouselExampleControls.carousel.slide.carousel-full
+          .carousel-inner.carousel-full__inner
+            each image in slides
+            
+              .carousel-item.active.carousel-normal__item
+                img.image(src=`${image.url}` alt="guaraciaba")
+          a.carousel-control-prev(href="#carouselExampleControls" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Previous
+          a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Next
     main
       section.section-benefits-solar
-        p.legend Dinheiro Salvo
-        p.legend-2 Conta de Luz
-        video.little-video(autoplay="" muted="" loop="")
-          source(src="videos/final.mp4" type="video/mp4")
-          source(src="videos/final.webm" type="video/webm")
-          |           Your browser is not supported!
-        .content-box
-          p#economize-button.sub-title Economize
-          h1.heading-tertiary(style="\
-          text-transform: none;\
-          font-size: 3.2rem;\
-          padding-bottom: 1rem;\
-          ")
-            | Eletrecidade por menos
-          p.default-text.default-text--solar-benefits
-            | Use a energia solar para abastecer sua casa e reduzir sua
-            | dependência da rede. Aproveite a enrgia solar para ajudar o
-            | meio-ambiente e assuma o controle de sua conta mensal de
-            | eletricidade. Saiba mais sobre seu potencial de economia em nosso
-            | Design Studio.
-          a.btn__animated.btn--border.btn--black(href="#design" style="padding: 1rem 2rem;") Veja as suas economias
+          p.legend Dinheiro Salvo
+          p.legend-2 Conta de Luz
+          video.little-video(autoplay="" muted="" loop="")
+            source(src="/videos/final.mp4" type="video/mp4")
+            source(src="/videos/final.webm" type="video/webm")
+            |       Your browser is not supported!
+          .content-box
+            p#economize-button.sub-title Economize
+            h1.heading-tertiary(style="\
+            text-transform: none;\
+            font-size: 3.2rem;\
+            padding-bottom: 1rem;\
+            ")
+              | Eletrecidade por menos
+            p.default-text.default-text--solar-benefits
+              | Use a energia solar para abastecer sua casa e reduzir sua
+              | dependência da rede. Aproveite a enrgia solar para ajudar o
+              | meio-ambiente e assuma o controle de sua conta mensal de
+              | eletricidade. Saiba mais sobre seu potencial de economia em nosso
+              | Design Studio.
+            a.btn__animated.btn--border.btn--black(href="#design" style="padding: 1rem 2rem;") Veja as suas economias
       section.section-carousel
         .bg-video(style="opacity: 0.4;")
           video.bg-video__content(autoplay="" muted="" loop="")
-            source(src="videos/long.mp4" type="video/mp4")
-            source(src="videos/long.webm" type="video/webm")
-            |             Your browser is not supported!
-        button#more.btn--white.u-center-absolute-downer.carousel__button(href="") Ver Imagens
+            source(src="./public/videos/long.mp4" type="video/mp4")
+            source(src="./public/videos/long.webm" type="video/webm")
+            |         Your browser is not supported!
+        button#more.btn--white.u-center-absolute-downer.carousel-normal__button Ver Imagens
         h1#customers.heading-tertiary.u-margin-bottom-medium.u-center-text
           | Veja clientes satisfeitos
-        #testemonial-carousel.carousel.slide(data-interval="5000" data-ride="carousel")
-          .carousel-inner
-            each slide, index in slides
-              div(class=`carousel-item ${index === 0 ? 'active' : 'nops'}`)
-                img.image(src=`${slide.url}` alt="imagem-área")
-
+        #testemonial-carousel.carousel.slide.carousel-normal(data-interval="5000" data-ride="carousel")
+          .carousel-inner.carousel-normal__inner
+            each image in slides
+              .carousel-item.active.carousel-normal__item
+                img.image(src=`${image.url}` alt="guaraciaba")
+          
           a.carousel-control-prev(href="#testemonial-carousel" role="button" data-slide="prev")
             span.carousel-control-prev-icon(aria-hidden="true")
             span.sr-only Previous
@@ -51,7 +66,7 @@ block content
         p.u-center-text.sub-title
           | Tenha dados estatísticos de sua produção energia direto no seu celular 📈
         .my-flex
-          img.my-flex__rotate(src="img/phone-app.png" alt="phone")
+          img.my-flex__rotate(src="public/img/phone-app.png" alt="phone")
           .items-box
             h4.u-center-text.big-heading
               | Confira um dos apps  

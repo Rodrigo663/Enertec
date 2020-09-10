@@ -8784,18 +8784,18 @@ var more = $('#more');
 var body = $('body');
 
 if (more.length) {
-  var carousel = $('.carousel');
+  var carousel = $('.big-carousel-box ');
   var div = $('.blur-div');
   var cut = $('#customers');
   var button = $('.x-button');
   var c = $('.section-carousel');
 
   function toggle() {
+    more.toggleClass('u-none');
     c.toggleClass('u-static');
     cut.toggleClass('u-none');
     div.toggleClass('u-none');
-    carousel.toggleClass('carousel-bigger');
-    button.toggleClass('u-none');
+    carousel.toggleClass('u-none');
   }
 
   button.on('click', function () {
@@ -8953,7 +8953,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50674" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57324" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
