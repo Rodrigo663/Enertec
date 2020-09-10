@@ -1,4 +1,7 @@
 header(class=className ? 'solar-header' : classHeader ? 'header' : classAuto ?  'auto-header' : '')
+    .blur-div.u-none
+
+    
     navbar(class=navBlack ? navBlack : 'navbar')
 
         img.navbar__logo(src="/img/logo.png" alt="logo")
@@ -18,6 +21,7 @@ header(class=className ? 'solar-header' : classHeader ? 'header' : classAuto ?  
             .btn
                 a.btn__animated.btn__main(href="#services") Explore nossos serviços
     if solar 
+
         #defheader-solar.defheader
             h1#solar-main-title.defheader__title Energia Solar Nunca é Demais
             .defheader__whole

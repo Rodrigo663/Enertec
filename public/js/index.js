@@ -3,20 +3,22 @@ import * as EmailValidator from 'email-validator';
 import axios from 'axios';
 import { showAlert, hideAlert } from './alert.js'
 import { sendData } from './send.js';
-
 const more = $('#more');
 const body = $('body');
 if(more.length) {
   const carousel = $('.big-carousel-box ');
   const div = $('.blur-div');
- 
+  
   const cut  =$('#customers');
   const button = $('.x-button');
+
+
   const c = $('.section-carousel');
   function toggle() {
     more.toggleClass('u-none');
     c.toggleClass('u-static');
     cut.toggleClass('u-none');
+    body.toggleClass('body-stone');
 
     div.toggleClass('u-none');
     carousel.toggleClass('u-none');
@@ -35,10 +37,15 @@ if(more.length) {
   })  
 }
 
+
+
+
+
 //////////////////////////////////////
 //////// HOME
 
 const toggleButton = $('.toggle-button');
+
 
 if(toggleButton.length) {
   const element = $('.right-navbar');
@@ -79,6 +86,7 @@ var markup = `
 `;
 const myDesign= $('#design'); 
 const form = $("#the-form");
+
 
 if(input.length) {
   input.keyup(function () {

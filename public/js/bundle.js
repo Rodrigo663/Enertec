@@ -8794,6 +8794,7 @@ if (more.length) {
     more.toggleClass('u-none');
     c.toggleClass('u-static');
     cut.toggleClass('u-none');
+    body.toggleClass('body-stone');
     div.toggleClass('u-none');
     carousel.toggleClass('u-none');
   }
